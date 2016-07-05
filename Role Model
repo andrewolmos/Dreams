@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Script src="Javascript">
+	</Script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="CSS">
+  <title>My dreams</title>
+  </head>
+
+  <body>
+
+
+
+
+  <style>
+  body{
+    background-color: gray
+  }
+
+  </style>
+  <h1><center>My Role Model</center><h2>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<ul>
+  <li><a class="active" href="Html.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">My Dreams</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Dream1.html">Dream 1</a>
+      <a href="Dream2.html">Dream 2</a>
+      <a href="Dream3.html">Dream 3</a>
+      <a href="Role Model"> Role Model</a>
+    </div>
+  </li>
+</ul>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<h1><center>Pete Parsons</center></h1>
+
+
+  <p> My role model is Pete Parsons because he created one of my most favorite game, Destiny, and I still play that game to this day. He is the also the CEO of the company that I want to work for, Bungie. One of the dreams that he accomplished that I have for myself is creating a game that everyone can enjoy. If you want to know more about what he does click here.</p>
+
+  <center><img src="http://media1.gameinformer.com/filestorage/CommunityServer.Components.SiteFiles/imagefeed/featured/people/parsons-pete/Bungie_Pete_Parsons_2013-610.jpg" Alt=" Pete Parsons looking at the camera with a smile and a gray long shirt" style="width:300px; height:228px;"></center>
+
+
+  </body>
+  </html>

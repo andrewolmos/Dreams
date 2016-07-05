@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Script src="Javascript.js">
+	</Script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My dreams</title>
+</head>
+<body>
+
+<h1> <center>My Dreams </center></h1>
+   
+</style>
+</head>
+<body>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">My Dreams</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="Dream1.html">Dream 1</a>
+      <a href="Dream2.html">Dream 2</a>
+      <a href="Dream3.html">Dream 3</a>
+      <a href="Role Model"> Role Model</a>
+    </div>
+  </li>
+</ul>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+<h1><center>About Me </center></h1>
+  <h1><p>I am a 16 year old boy who enjoys watching anime, technology, space, and likes listening to music. I also enjoy playing games and watching movies. Ever since I was a kid I've been intrigued with how code works and by what's in outer space.</p></h1>
+
+
+
+
+  <center>
+<img src="https://stellight.files.wordpress.com/2011/08/i-have-no-words-i-must-design.png" Alt="A picture of game design" style="width:304px;height:228px;">
+
+  </center>
+
+ 
+  <link rel="Stylesheet" type="text/css" href="CSS"/>
+ 
+</html>
